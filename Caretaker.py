@@ -6,14 +6,14 @@ class Caretaker():
     The Caretaker works with all mementos via the base Memento interface.
     """
 
-    def __init__(self, Client: Client) -> None:
+    def __init__(self, Client: Client):
         self._mementos = []
         self._Client = Client
 
-    def backup(self) -> None:
+    def backup(self):
         self._mementos.append(self._Client.save())
 
-    def undo(self) -> None:
+    def undo(self):
         if not len(self._mementos):
             return
 

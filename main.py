@@ -31,6 +31,6 @@ if __name__ == "__main__":
     caretaker.undo()
     print(Cliente)
 
-    print("\nCLIENTE - ESTADO ANTE-ANTERIOR\n")
+    print("\nCLIENTE - ESTADO TRASANTERIOR\n")
     caretaker.undo()
     print(Cliente)

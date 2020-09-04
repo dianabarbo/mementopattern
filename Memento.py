@@ -7,17 +7,17 @@ class Memento(ABC):
     """
 
     @abstractmethod
-    def get_date(self) -> str:
+    def get_date(self):
         pass
 
 
 class ConcreteMemento(Memento):
-    def __init__(self, state) -> None:
+    def __init__(self, state):
         self._state = state
         self._date = str(datetime.now())[:19]
 
-    def get_state(self) -> str:
+    def get_state(self):
         return self._state
 
-    def get_date(self) -> str:
+    def get_date(self):
         return self._date
